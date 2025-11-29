@@ -36,57 +36,6 @@ details[open] summary ~ * {
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-/* NOVO: Estilo para a barra de progresso */
-#scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 4px; /* Altura da barra */
-    /* Cores da sua marca */
-    background: linear-gradient(90deg, #002855, #004aad, #25D366); 
-    z-index: 9999;
-    transition: width 0.1s ease-out; /* Suaviza a transição da barra */
-}
-
-/* Custom Styles for Pablo Celulares */
-
-.insta-border {
-    background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
-    padding: 2px;
-    border-radius: 50%;
-}
-.whatsapp-float {
-    animation: pulse-green 2s infinite;
-}
-@keyframes pulse-green {
-    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-}
-.snap-x-mandatory {
-    scroll-snap-type: x mandatory;
-}
-.snap-center {
-    scroll-snap-align: center;
-}
-details > summary {
-    list-style: none;
-}
-details > summary::-webkit-details-marker {
-    display: none;
-}
-details[open] summary ~ * {
-    animation: sweep .5s ease-in-out;
-}
-@keyframes sweep {
-    0%    {opacity: 0; transform: translateY(-10px)}
-    100%  {opacity: 1; transform: translateY(0)}
-}
-/* Esconder barra de rolagem horizontal em alguns navegadores (Galeria) */
-.hide-scrollbar::-webkit-scrollbar { display: none; }
-.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
 /* Estilo para a barra de progresso (Cores: #00297b, #15abc4) */
 #scroll-progress {
     position: fixed;
@@ -124,12 +73,17 @@ details[open] summary ~ * {
     z-index: 10;
 }
 
-/* Esconde a imagem ANTES ao passar o mouse */
-.before-after-container:hover .before-image {
+/* ---------------------------------------------------------------------- */
+/* LÓGICA DE TRANSIÇÃO: HOVER (Mouse) e JS-ACTIVE (Clique/Toque)           */
+/* ---------------------------------------------------------------------- */
+
+/* ESCONDE A IMAGEM ANTES: Tanto no HOVER quanto no CLIQUE/TOQUE */
+.before-after-container:hover .before-image,
+.before-after-container.js-active .before-image {
     opacity: 0; 
 }
 
-/* Rótulos para ANTES e DEPOIS (Posicionados no topo das imagens) */
+/* Rótulos para ANTES e DEPOIS */
 .before-after-label {
     position: absolute;
     z-index: 20;
@@ -154,11 +108,13 @@ details[open] summary ~ * {
     background-color: rgba(37, 211, 102, 0.4); /* Verde Claro (40% opacidade) */
 }
 
-/* -- ESTADO HOVER (ANTES Claro, DEPOIS Forte) -- */
-.before-after-container:hover .label-before {
+/* -- ESTADO HOVER & CLICADO (ANTES Claro, DEPOIS Forte) -- */
+.before-after-container:hover .label-before,
+.before-after-container.js-active .label-before {
     background-color: rgba(220, 38, 38, 0.4); /* Vermelho Claro (40% opacidade) */
 }
 
-.before-after-container:hover .label-after {
+.before-after-container:hover .label-after,
+.before-after-container.js-active .label-after {
     background-color: #25D366; /* Verde Forte */
 }
