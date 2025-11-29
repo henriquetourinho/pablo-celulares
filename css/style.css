@@ -1,0 +1,37 @@
+/* Custom Styles for Pablo Celulares */
+
+.insta-border {
+    background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+    padding: 2px;
+    border-radius: 50%;
+}
+.whatsapp-float {
+    animation: pulse-green 2s infinite;
+}
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+.snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+}
+.snap-center {
+    scroll-snap-align: center;
+}
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0%    {opacity: 0; transform: translateY(-10px)}
+    100%  {opacity: 1; transform: translateY(0)}
+}
+/* Esconder barra de rolagem horizontal em alguns navegadores (Galeria) */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

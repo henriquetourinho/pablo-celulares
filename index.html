@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="/css/style.css"> 
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Roboto"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            blue: '#002855', /* Azul Profundo da Logo */
+                            light: '#004aad', 
+                            accent: '#25D366', 
+                            dark: '#0a0a0a',
+                        }
+                    },
+                    backgroundImage: {
+                        'insta-gradient': "linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                        'header-bg': "url('https://images.unsplash.com/photo-1627916629918-a6e50774a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" /* Nova imagem de fundo */
+                    }
+                }
+            }
+        }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,64 +73,6 @@
     }
     </script>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['"Roboto"', 'sans-serif'] },
-                    colors: {
-                        brand: {
-                            blue: '#002855', /* Azul Profundo da Logo */
-                            light: '#004aad', 
-                            accent: '#25D366', 
-                            dark: '#0a0a0a',
-                        }
-                    },
-                    backgroundImage: {
-                        'insta-gradient': "linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-                        'header-bg': "url('https://images.unsplash.com/photo-1627916629918-a6e50774a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" /* Nova imagem de fundo */
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .insta-border {
-            background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
-            padding: 2px;
-            border-radius: 50%;
-        }
-        .whatsapp-float {
-            animation: pulse-green 2s infinite;
-        }
-        @keyframes pulse-green {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-        .snap-x-mandatory {
-            scroll-snap-type: x mandatory;
-        }
-        .snap-center {
-            scroll-snap-align: center;
-        }
-        details > summary {
-            list-style: none;
-        }
-        details > summary::-webkit-details-marker {
-            display: none;
-        }
-        details[open] summary ~ * {
-            animation: sweep .5s ease-in-out;
-        }
-        @keyframes sweep {
-            0%    {opacity: 0; transform: translateY(-10px)}
-            100%  {opacity: 1; transform: translateY(0)}
-        }
-        /* Esconder barra de rolagem horizontal em alguns navegadores */
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
@@ -462,48 +428,7 @@
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <script>
-        // Função para alternar o menu móvel
-        function toggleMenu() {
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
-            
-            menuButton.setAttribute('aria-expanded', !isExpanded);
-            mobileMenu.classList.toggle('hidden');
-            
-            // Alterna o ícone de hamburger
-            const icon = menuButton.querySelector('.fa-bars, .fa-xmark');
-            if (icon) {
-                if (isExpanded) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            }
-        }
-
-        // Adiciona o listener ao botão de menu
-        document.getElementById('menu-button').addEventListener('click', toggleMenu);
-
-        // Função para scroll suave e fechar o menu mobile após clique
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                // Se o menu mobile estiver aberto, fecha ele
-                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
-                    toggleMenu();
-                }
-                
-                // Habilita o scroll suave
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/js/script.js"></script>
 
 </body>
 </html>
