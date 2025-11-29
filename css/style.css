@@ -35,3 +35,16 @@ details[open] summary ~ * {
 /* Esconder barra de rolagem horizontal em alguns navegadores (Galeria) */
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* NOVO: Estilo para a barra de progresso */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px; /* Altura da barra */
+    /* Cores da sua marca */
+    background: linear-gradient(90deg, #002855, #004aad, #25D366); 
+    z-index: 9999;
+    transition: width 0.1s ease-out; /* Suaviza a transição da barra */
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Celulares Oficial | Assistência Técnica em Salvador</title>
     <meta name="description" content="Assistência Técnica Especializada em São Marcos, Salvador. Troca de tela, bateria e reparo de placa. Acessórios originais e garantia. Orçamento no WhatsApp.">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -18,15 +19,15 @@
                     fontFamily: { sans: ['"Roboto"', 'sans-serif'] },
                     colors: {
                         brand: {
-                            blue: '#002855', /* Azul Profundo da Logo */
-                            light: '#004aad', 
+                            blue: '#00297b', /* Azul Principal */
+                            light: '#15abc4', /* Azul Secundário/Destaque */
                             accent: '#25D366', 
                             dark: '#0a0a0a',
                         }
                     },
                     backgroundImage: {
                         'insta-gradient': "linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-                        'header-bg': "url('https://images.unsplash.com/photo-1627916629918-a6e50774a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" /* Nova imagem de fundo */
+                        'header-bg': "url('https://images.unsplash.com/photo-1627916629918-a6e50774a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
                     }
                 }
             }
@@ -75,22 +76,15 @@
 
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-
-    <a href="https://www.instagram.com/pablocelularesoficial/" target="_blank" class="block bg-insta-gradient text-white font-bold text-center py-3 text-sm hover:opacity-90 transition relative z-50">
-        <i class="fa-brands fa-instagram text-lg mr-2 align-middle"></i>
-        Siga @pablocelularesoficial e veja nossos stories!
-    </a>
+    
+    <div id="scroll-progress"></div>
 
     <nav class="bg-brand-blue shadow-lg sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="bg-white text-brand-blue w-9 h-9 rounded flex items-center justify-center text-lg shadow-sm">
-                    <i class="fa-solid fa-wrench"></i>
-                </div>
-                <div class="leading-none">
-                    <h1 class="font-black text-xl text-white italic tracking-tighter">PABLO<span class="text-blue-300">CELULARES</span></h1>
-                    <p class="text-[9px] text-blue-200 font-bold uppercase tracking-widest mt-0.5">Assistência Técnica</p>
-                </div>
+                <a href="#" class="flex items-center">
+                    <img src="/media/logo.png" alt="Pablo Celulares - Assistência Técnica" class="h-9 w-auto">
+                </a>
             </div>
 
             <div class="hidden md:flex gap-6 font-medium text-sm text-blue-100 items-center">
@@ -98,6 +92,15 @@
                 <a href="#antes-depois" class="hover:text-white transition">Soluções</a>
                 <a href="#reviews" class="hover:text-white transition">Avaliações</a>
                 <a href="#faq" class="hover:text-white transition">Dúvidas</a>
+                
+                <div class="flex items-center text-xs text-blue-100 pr-2">
+                    <div class="flex text-yellow-400 text-sm mr-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="font-bold">5.0</span>
+                    <span class="text-gray-400 ml-1 hidden lg:inline">| Garantia 90 dias</span>
+                </div>
+                
                 <a href="https://api.whatsapp.com/send/?phone=71986882361" 
                    class="bg-white text-brand-blue hover:bg-gray-100 px-5 py-2 rounded-md font-bold transition flex items-center gap-2 text-xs uppercase tracking-wide">
                     <i class="fa-brands fa-whatsapp text-lg text-green-600"></i> Orçamento
@@ -146,48 +149,49 @@
             </div>
         </div>
     </header>
-
-    <section id="reparos" class="py-12 bg-white">
+    
+    <section id="reparos" class="py-12 bg-brand-dark text-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h3 class="text-brand-blue font-bold text-center uppercase text-sm tracking-widest mb-10 border-b pb-4 mx-auto max-w-xs border-blue-100">Nossos Serviços</h3>
+            <h3 class="text-brand-light font-bold text-center uppercase text-sm tracking-widest mb-10 border-b pb-4 mx-auto max-w-xs border-blue-900">Nossos Serviços</h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="group bg-[#121212] border border-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1574614742636-2396e9527027?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="/media/display.webp" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500" alt="Troca de display, celular quebrado">
                         <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
                         <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Vidros e Telas</span>
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Troca de Frontal e Display</h4>
-                        <p class="text-sm text-gray-600 mb-4">Seu touch parou ou o vidro trincou? Trocamos por peças de alta qualidade mantendo as cores originais.</p>
-                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                        <h4 class="font-bold text-lg mb-2 text-white">Troca de Frontal e Display</h4>
+                        <p class="text-sm text-gray-400 mb-4">Seu touch parou ou o vidro trincou? Trocamos por peças de alta qualidade mantendo as cores originais.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-brand-accent hover:underline">Orçar no Zap →</a>
                     </div>
                 </div>
 
-                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="group bg-[#121212] border border-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1619551734325-81eb01f6ded3?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="/media/bateria.webp" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500" alt="Bateria e conector de carga">
                         <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
                         <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Baterias e Carga</span>
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Conectores e Baterias Viciadas</h4>
-                        <p class="text-sm text-gray-600 mb-4">Celular com mau contato ou bateria viciada? Resolvemos problemas de carga e energia rapidamente.</p>
-                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                        <h4 class="font-bold text-lg mb-2 text-white">Conectores e Baterias</h4>
+                        <p class="text-sm text-gray-400 mb-4 font-bold text-brand-accent">Serviço Expresso: Troca em até 60 minutos!</p>
+                        <p class="text-sm text-gray-400">Celular com mau contato ou bateria viciada? Resolvemos problemas de carga e energia.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-brand-accent hover:underline">Orçar no Zap →</a>
                     </div>
                 </div>
 
-                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="group bg-[#121212] border border-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <img src="/media/reparo.webp" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition duration-500" alt="Reparo de placa de celular">
                         <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
                         <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Placa e Software</span>
                     </div>
                     <div class="p-5">
-                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Reparos Avançados</h4>
-                        <p class="text-sm text-gray-600 mb-4">Travou na maçã ou no logo? Recuperação de sistema, desbloqueios e reparos avançados.</p>
-                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                        <h4 class="font-bold text-lg mb-2 text-white">Reparos Avançados</h4>
+                        <p class="text-sm text-gray-400 mb-4">Travou na maçã ou no logo? Recuperação de sistema, desbloqueios e reparos avançados.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-brand-accent hover:underline">Orçar no Zap →</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +212,7 @@
                     <div class="relative h-64">
                         <img src="https://images.unsplash.com/photo-1598327773202-3c9383c4fa11?q=80&w=600" class="w-full h-full object-cover">
                         <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
-                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                        <div class="absolute bottom-4 right-4 bg-brand-accent text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Troca de Vidro iPhone 11</h4>
@@ -219,8 +223,8 @@
                 <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
                     <div class="relative h-64">
                         <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=600" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
-                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
+                        <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Baterias e Carga</span>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Reparo Lógico de Placa</h4>
@@ -232,7 +236,7 @@
                     <div class="relative h-64">
                         <img src="https://plus.unsplash.com/premium_photo-1680985551009-05107cd2752c?q=80&w=600" class="w-full h-full object-cover">
                          <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
-                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                        <div class="absolute bottom-4 right-4 bg-brand-accent text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Conector Tipo C Quebrado</h4>
@@ -333,9 +337,9 @@
         <div class="bg-[#121212] border border-gray-800 rounded-xl p-5 max-w-sm mx-auto flex items-center justify-between shadow-2xl">
             <div class="flex items-center gap-3">
                 <div class="insta-border w-12 h-12 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=200" 
+                    <img src="/media/perfil.png" 
                          class="w-full h-full rounded-full border-2 border-[#121212] object-cover"
-                         alt="Logo Pablo Celulares"> 
+                         alt="Foto de Perfil do Instagram"> 
                 </div>
                 <div class="text-left">
                     <p class="text-gray-400 text-[10px] leading-tight">Siga no Instagram</p>
@@ -399,32 +403,94 @@
     <section id="localizacao" class="bg-brand-blue text-white py-12">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8 items-center">
             <div class="md:w-1/3 text-center md:text-left">
-                <h3 class="text-blue-300 font-bold uppercase tracking-widest text-xs mb-2">Visite a Loja</h3>
+                <h3 class="text-brand-light font-bold uppercase tracking-widest text-xs mb-2">Visite a Loja</h3>
                 <h2 class="text-2xl font-black mb-6">Estamos te esperando</h2>
                 <div class="space-y-4">
                     <p class="flex items-center justify-center md:justify-start gap-3">
                         <i class="fa-solid fa-location-dot text-xl"></i>
-                        <span class="text-sm">Rua Micronésia<br>São Marcos, Salvador - BA</span>
+                        <span class="text-sm font-bold text-white">Pablo Celulares<br>São Marcos, Salvador - BA</span>
                     </p>
+                    
+                    <p class="flex items-center justify-center md:justify-start gap-3 text-sm">
+                        <i class="fa-solid fa-clock text-xl text-brand-light"></i>
+                        <span>Seg-Sex: 08:00 às 18:00 | Sáb: 08:00 às 13:00</span>
+                    </p>
+
                     <p class="flex items-center justify-center md:justify-start gap-3">
                         <i class="fa-brands fa-whatsapp text-xl"></i>
                         <span class="text-sm font-bold">(71) 98688-2361</span>
                     </p>
+
+                    <div class="pt-2 text-center md:text-left">
+                        <span class="text-xs font-bold uppercase text-brand-light block mb-2">Aceitamos:</span>
+                        <div class="flex gap-4 justify-center md:justify-start">
+                            <i class="fa-brands fa-cc-visa text-2xl text-white" title="Cartão Visa"></i>
+                            <i class="fa-brands fa-cc-mastercard text-2xl text-white" title="Cartão Mastercard"></i>
+                            <span class="text-2xl font-black text-white" title="Pix">PIX</span>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Micron%C3%A9sia,+S%C3%A3o+Marcos,+Salvador+-+BA" target="_blank"
+                       class="mt-4 inline-flex items-center bg-white text-brand-blue font-bold px-4 py-2 rounded-full hover:bg-gray-200 transition text-sm shadow-lg">
+                        <i class="fa-solid fa-route mr-2"></i> Traçar Rota no Maps
+                    </a>
                 </div>
             </div>
-            <div class="md:w-2/3 w-full h-64 bg-blue-900 rounded-lg overflow-hidden border-2 border-blue-400/30">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6534947966785!2d-38.4379517!3d-12.9299628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71619de8c9a6f1b%3A0x6b8b8b8b8b8b8b8b!2sS%C3%A3o%20Marcos%2C%20Salvador%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="md:w-2/3 w-full h-64 bg-blue-900 rounded-lg overflow-hidden border-2 border-brand-light/30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.232372412574!2d-38.41160358516008!3d-12.96645607374094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71602dd78a2e5a5%3A0xc0f16f9f3f3f3f3f!2sRua%20Micron%C3%A9sia%2C%20S%C3%A3o%20Marcos%2C%20Salvador%20-%20BA%2C%2041250-160%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1701397000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-    <footer class="bg-brand-dark text-gray-500 py-6 text-center text-xs border-t border-gray-900">
-        <p class="mb-2 text-white font-bold">PABLO CELULARES OFICIAL</p>
-        <p>© 2025. Assistência Técnica Especializada.</p>
+    <footer class="bg-brand-dark text-gray-400">
+        <div class="max-w-6xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-700">
+            
+            <div>
+                <img src="/media/logo.png" alt="Pablo Celulares Oficial" class="h-auto max-w-[150px] mb-3">
+                <p class="text-sm">Especialistas em reparo de hardware e fornecimento de acessórios premium em Salvador.</p>
+            </div>
+
+            <div>
+                <h5 class="font-bold uppercase text-white mb-4 text-sm">Navegação</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#reparos" class="hover:text-white transition">Serviços</a></li>
+                    <li><a href="#acessorios" class="hover:text-white transition">Acessórios</a></li>
+                    <li><a href="#reviews" class="hover:text-white transition">Avaliações</a></li>
+                    <li><a href="#faq" class="hover:text-white transition">Dúvidas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-bold uppercase text-white mb-4 text-sm">Contato</h5>
+                <ul class="space-y-2 text-sm">
+                    <li class="flex items-center gap-2"><i class="fa-brands fa-whatsapp text-brand-accent"></i> (71) 98688-2361</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-light"></i> São Marcos, Salvador</li>
+                </ul>
+                <div class="flex gap-4 mt-4">
+                    <a href="https://www.instagram.com/pablocelularesoficial/" target="_blank" class="text-white hover:text-pink-500 transition text-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="text-white hover:text-blue-500 transition text-xl"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h5 class="font-bold uppercase text-white mb-4 text-sm">Informações</h5>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Política de Privacidade</a></li>
+                    <li><a href="#" class="hover:text-white transition">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-white transition">Garantia (90 dias)</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 py-4 text-center text-xs">
+            <p>© 2025. Pablo Celulares Oficial. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <a href="https://api.whatsapp.com/send/?phone=71986882361&text=Ola+vim+pelo+site" 
-       class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg whatsapp-float hover:scale-110 transition">
+       class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg whatsapp-float hover:scale-110 transition"
+       aria-label="Falar com Pablo Celulares no WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
