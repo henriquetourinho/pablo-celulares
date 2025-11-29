@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Celulares Oficial | Assistência Técnica em Salvador</title>
+    <meta name="description" content="Assistência Técnica Especializada em São Marcos, Salvador. Troca de tela, bateria e reparo de placa. Acessórios originais e garantia. Orçamento no WhatsApp.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobilePhoneStore",
+      "name": "Pablo Celulares Oficial",
+      "image": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea",
+      "description": "Assistência técnica especializada em celulares em São Marcos, Salvador.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Micronésia",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "postalCode": "41250-160",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -12.9351, 
+        "longitude": -38.4234
+      },
+      "url": "https://www.instagram.com/pablocelularesoficial/",
+      "telephone": "+5571986882361",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Roboto"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            blue: '#002855', /* Azul Profundo da Logo */
+                            light: '#004aad', 
+                            accent: '#25D366', 
+                            dark: '#0a0a0a',
+                        }
+                    },
+                    backgroundImage: {
+                        'insta-gradient': "linear-gradient(90deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
+                        'header-bg': "url('https://images.unsplash.com/photo-1627916629918-a6e50774a38d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" /* Nova imagem de fundo */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .insta-border {
+            background: linear-gradient(45deg, #f09433, #dc2743, #bc1888);
+            padding: 2px;
+            border-radius: 50%;
+        }
+        .whatsapp-float {
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .snap-x-mandatory {
+            scroll-snap-type: x mandatory;
+        }
+        .snap-center {
+            scroll-snap-align: center;
+        }
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .5s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+        /* Esconder barra de rolagem horizontal em alguns navegadores */
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <a href="https://www.instagram.com/pablocelularesoficial/" target="_blank" class="block bg-insta-gradient text-white font-bold text-center py-3 text-sm hover:opacity-90 transition relative z-50">
+        <i class="fa-brands fa-instagram text-lg mr-2 align-middle"></i>
+        Siga @pablocelularesoficial e veja nossos stories!
+    </a>
+
+    <nav class="bg-brand-blue shadow-lg sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-white text-brand-blue w-9 h-9 rounded flex items-center justify-center text-lg shadow-sm">
+                    <i class="fa-solid fa-wrench"></i>
+                </div>
+                <div class="leading-none">
+                    <h1 class="font-black text-xl text-white italic tracking-tighter">PABLO<span class="text-blue-300">CELULARES</span></h1>
+                    <p class="text-[9px] text-blue-200 font-bold uppercase tracking-widest mt-0.5">Assistência Técnica</p>
+                </div>
+            </div>
+
+            <div class="hidden md:flex gap-6 font-medium text-sm text-blue-100 items-center">
+                <a href="#reparos" class="hover:text-white transition">Serviços</a>
+                <a href="#antes-depois" class="hover:text-white transition">Soluções</a>
+                <a href="#reviews" class="hover:text-white transition">Avaliações</a>
+                <a href="#faq" class="hover:text-white transition">Dúvidas</a>
+                <a href="https://api.whatsapp.com/send/?phone=71986882361" 
+                   class="bg-white text-brand-blue hover:bg-gray-100 px-5 py-2 rounded-md font-bold transition flex items-center gap-2 text-xs uppercase tracking-wide">
+                    <i class="fa-brands fa-whatsapp text-lg text-green-600"></i> Orçamento
+                </a>
+            </div>
+
+            <button id="menu-button" class="md:hidden text-white text-2xl p-2 rounded hover:bg-white/10 transition" aria-expanded="false" aria-controls="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-blue pb-4 border-t border-blue-900">
+            <div class="flex flex-col text-center text-white text-lg font-medium">
+                <a href="#reparos" class="block py-2 hover:bg-brand-light transition">Serviços</a>
+                <a href="#antes-depois" class="block py-2 hover:bg-brand-light transition">Soluções</a>
+                <a href="#reviews" class="block py-2 hover:bg-brand-light transition">Avaliações</a>
+                <a href="#faq" class="block py-2 hover:bg-brand-light transition">Dúvidas</a>
+                <a href="https://api.whatsapp.com/send/?phone=71986882361" class="block py-3 mt-2 mx-4 bg-brand-accent rounded-md hover:bg-green-600 transition">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Orçamento Rápido
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-header-bg bg-cover bg-center py-20 md:py-32 px-4 text-center text-white overflow-hidden">
+        <div class="absolute inset-0 bg-brand-blue opacity-85"></div> <div class="relative z-10 max-w-4xl mx-auto">
+            <span class="inline-flex items-center gap-2 py-1 px-3 rounded-full bg-yellow-400 text-brand-blue text-xs font-bold mb-4">
+                <i class="fa-solid fa-star"></i> Referência em São Marcos
+            </span>
+            <h2 class="text-4xl md:text-5xl font-black mb-4 leading-tight">
+                Seu celular novo de novo. <br>
+                Confiança e Qualidade.
+            </h2>
+            <p class="text-base md:text-lg text-blue-200 mb-8 max-w-xl mx-auto font-light">
+                Assistência técnica especializada, acessórios premium e o atendimento que você merece.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <a href="https://api.whatsapp.com/send/?phone=71986882361&text=Ola+preciso+de+reparo" 
+                   class="bg-brand-accent hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg flex items-center justify-center gap-2 transition transform hover:-translate-y-1 text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Falar com Técnico
+                </a>
+                <a href="https://www.instagram.com/pablocelularesoficial/" target="_blank"
+                   class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg flex items-center justify-center gap-2 transition transform hover:-translate-y-1 text-base">
+                    <i class="fa-brands fa-instagram text-xl"></i> Ver Serviços no Instagram
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="reparos" class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-brand-blue font-bold text-center uppercase text-sm tracking-widest mb-10 border-b pb-4 mx-auto max-w-xs border-blue-100">Nossos Serviços</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574614742636-2396e9527027?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
+                        <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Vidros e Telas</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Troca de Frontal e Display</h4>
+                        <p class="text-sm text-gray-600 mb-4">Seu touch parou ou o vidro trincou? Trocamos por peças de alta qualidade mantendo as cores originais.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1619551734325-81eb01f6ded3?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
+                        <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Baterias e Carga</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Conectores e Baterias Viciadas</h4>
+                        <p class="text-sm text-gray-600 mb-4">Celular com mau contato ou bateria viciada? Resolvemos problemas de carga e energia rapidamente.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                    </div>
+                </div>
+
+                <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
+                        <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Placa e Software</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-lg mb-2 text-brand-blue">Reparos Avançados</h4>
+                        <p class="text-sm text-gray-600 mb-4">Travou na maçã ou no logo? Recuperação de sistema, desbloqueios e reparos avançados.</p>
+                        <a href="https://api.whatsapp.com/send/?phone=71986882361" class="text-sm font-bold text-green-600 hover:underline">Orçar no Zap →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="antes-depois" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h3 class="text-brand-blue font-bold uppercase text-sm tracking-widest mb-2">Casos de Sucesso</h3>
+                <h2 class="text-3xl font-black text-gray-900">Nossas Soluções Completas</h2>
+                <p class="text-gray-500">Arraste para o lado e confira alguns dos nossos resultados de manutenção pesada.</p>
+            </div>
+
+            <div class="flex overflow-x-auto snap-x-mandatory gap-6 pb-8 hide-scrollbar">
+                
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1598327773202-3c9383c4fa11?q=80&w=600" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
+                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-brand-blue">Troca de Vidro iPhone 11</h4>
+                        <p class="text-xs text-gray-500 mt-1">Recuperação total do painel de toque sem trocar o display original.</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-64">
+                        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=600" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
+                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-brand-blue">Reparo Lógico de Placa</h4>
+                        <p class="text-xs text-gray-500 mt-1">Aparelho que não ligava por falha de CI. Componentes trocados com sucesso.</p>
+                    </div>
+                </div>
+
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <div class="relative h-64">
+                        <img src="https://plus.unsplash.com/premium_photo-1680985551009-05107cd2752c?q=80&w=600" class="w-full h-full object-cover">
+                         <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
+                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-bold text-brand-blue">Conector Tipo C Quebrado</h4>
+                        <p class="text-xs text-gray-500 mt-1">Solução rápida para problemas de carregamento e transferência de dados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="acessorios" class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <span class="text-brand-blue font-bold tracking-widest text-xs uppercase">Acessórios Premium</span>
+                <h2 class="text-3xl font-black text-gray-900 mb-4 mt-2">Proteção e Estilo para seu Smartphone</h2>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-center gap-3 bg-white p-3 rounded shadow-sm">
+                        <i class="fa-solid fa-shield-cat text-brand-blue text-xl"></i>
+                        <span class="font-bold text-gray-700">Capas Anti-Impacto e Militares</span>
+                    </li>
+                    <li class="flex items-center gap-3 bg-white p-3 rounded shadow-sm">
+                        <i class="fa-solid fa-mobile text-brand-blue text-xl"></i>
+                        <span class="font-bold text-gray-700">Películas 3D, Cerâmica e Privacidade</span>
+                    </li>
+                    <li class="flex items-center gap-3 bg-white p-3 rounded shadow-sm">
+                        <i class="fa-solid fa-bolt text-brand-blue text-xl"></i>
+                        <span class="font-bold text-gray-700">Carregadores Turbo Originais</span>
+                    </li>
+                </ul>
+                <a href="https://api.whatsapp.com/send/?phone=71986882361&text=Quero+ver+os+acessorios" 
+                   class="inline-block bg-brand-blue text-white font-bold py-3 px-6 rounded hover:bg-blue-900 transition">
+                    Ver Catálogo no WhatsApp
+                </a>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <img src="https://m.media-amazon.com/images/I/61+IsC3T+aL._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="https://m.media-amazon.com/images/I/5182+SgJbSL._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="https://m.media-amazon.com/images/I/61N4i611s+L._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="https://m.media-amazon.com/images/I/516+Sg6u+9L._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-16 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-2 mb-8">
+                <span class="text-2xl font-bold text-gray-600">Google</span>
+                <div class="flex text-yellow-400 text-xl">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-gray-500 font-medium ml-2">5.0/5.0</span> 
+            </div>
+            
+            <h2 class="text-3xl font-black text-center text-brand-blue mb-10">O que falam da Pablo Celulares</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">F</div>
+                        <div>
+                            <p class="font-bold text-sm">FERNANDA SOARES SILVA</p>
+                            <p class="text-xs text-gray-400">1 avaliação • 2 fotos</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic">"Recomendo esta loja com total confiança. O atendimento é impecável, os serviços e produtos são de excelente qualidade, e toda a equipe demonstra grande profissionalismo. O proprietário está sempre pronto a oferecer suporte e atenção aos clientes."</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold">G</div>
+                        <div>
+                            <p class="font-bold text-sm">Glauber Lubarino</p>
+                            <p class="text-xs text-gray-400">17 avaliações</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 text-xs mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 text-sm italic">"Serviço rápido e de altíssima qualidade. O aparelho ficou novo de novo. É perceptível o profissionalismo e a atenção ao detalhe. Cinco estrelas com louvor!"</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="https://www.google.com/maps" target="_blank" class="text-brand-blue font-bold text-sm hover:underline">Ver todas as avaliações no Google Maps →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#050505] py-16 px-4">
+        <div class="max-w-md mx-auto text-center mb-8">
+            <h2 class="text-white text-2xl font-bold mb-2">Siga nosso dia a dia</h2>
+            <p class="text-gray-400 text-sm">Postamos promoções relâmpago e resultados de reparos nos stories!</p>
+        </div>
+        <div class="bg-[#121212] border border-gray-800 rounded-xl p-5 max-w-sm mx-auto flex items-center justify-between shadow-2xl">
+            <div class="flex items-center gap-3">
+                <div class="insta-border w-12 h-12 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=200" 
+                         class="w-full h-full rounded-full border-2 border-[#121212] object-cover"
+                         alt="Logo Pablo Celulares"> 
+                </div>
+                <div class="text-left">
+                    <p class="text-gray-400 text-[10px] leading-tight">Siga no Instagram</p>
+                    <p class="text-white font-bold text-sm">@pablocelularesoficial</p>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/pablocelularesoficial/" target="_blank" class="bg-[#0095f6] hover:bg-[#1877f2] text-white text-sm font-bold px-5 py-1.5 rounded-lg transition">
+                Seguir
+            </a>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center text-brand-blue mb-10">Dúvidas Frequentes</h2>
+
+            <div class="space-y-4">
+                <details class="group bg-white rounded-lg p-4 cursor-pointer border border-gray-200 open:border-brand-blue transition duration-300 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        <span>Perco meus dados (fotos/contatos) na troca de tela?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand-blue"></i></span>
+                    </summary>
+                    <div class="text-gray-600 text-sm mt-3 leading-relaxed border-t border-gray-200 pt-3">
+                        Não! Na troca de tela, vidro ou bateria, seus dados permanecem intactos. Só é necessário formatar em casos graves de software, e sempre avisamos antes.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg p-4 cursor-pointer border border-gray-200 open:border-brand-blue transition duration-300 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        <span>Quanto tempo demora o conserto?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand-blue"></i></span>
+                    </summary>
+                    <div class="text-gray-600 text-sm mt-3 leading-relaxed border-t border-gray-200 pt-3">
+                        A maioria dos serviços (troca de tela e bateria) é feita no mesmo dia, muitas vezes em menos de 2 horas. Reparos de placa podem levar um pouco mais de tempo para testes.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg p-4 cursor-pointer border border-gray-200 open:border-brand-blue transition duration-300 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        <span>O serviço tem garantia?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand-blue"></i></span>
+                    </summary>
+                    <div class="text-gray-600 text-sm mt-3 leading-relaxed border-t border-gray-200 pt-3">
+                        Sim! Oferecemos garantia de 90 dias (3 meses) para peças e mão de obra, conforme o código de defesa do consumidor. Se der defeito na peça, trocamos na hora.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg p-4 cursor-pointer border border-gray-200 open:border-brand-blue transition duration-300 shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        <span>Vocês buscam o aparelho em casa?</span>
+                        <span class="transition group-open:rotate-180"><i class="fa-solid fa-chevron-down text-brand-blue"></i></span>
+                    </summary>
+                    <div class="text-gray-600 text-sm mt-3 leading-relaxed border-t border-gray-200 pt-3">
+                        Sim, trabalhamos com serviço de motoboy parceiro para buscar e entregar seu aparelho em bairros próximos. Consulte a taxa de entrega no WhatsApp.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="localizacao" class="bg-brand-blue text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-8 items-center">
+            <div class="md:w-1/3 text-center md:text-left">
+                <h3 class="text-blue-300 font-bold uppercase tracking-widest text-xs mb-2">Visite a Loja</h3>
+                <h2 class="text-2xl font-black mb-6">Estamos te esperando</h2>
+                <div class="space-y-4">
+                    <p class="flex items-center justify-center md:justify-start gap-3">
+                        <i class="fa-solid fa-location-dot text-xl"></i>
+                        <span class="text-sm">Rua Micronésia<br>São Marcos, Salvador - BA</span>
+                    </p>
+                    <p class="flex items-center justify-center md:justify-start gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span class="text-sm font-bold">(71) 98688-2361</span>
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-2/3 w-full h-64 bg-blue-900 rounded-lg overflow-hidden border-2 border-blue-400/30">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.6534947966785!2d-38.4379517!3d-12.9299628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71619de8c9a6f1b%3A0x6b8b8b8b8b8b8b8b!2sS%C3%A3o%20Marcos%2C%20Salvador%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark text-gray-500 py-6 text-center text-xs border-t border-gray-900">
+        <p class="mb-2 text-white font-bold">PABLO CELULARES OFICIAL</p>
+        <p>© 2025. Assistência Técnica Especializada.</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send/?phone=71986882361&text=Ola+vim+pelo+site" 
+       class="fixed bottom-5 right-5 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg whatsapp-float hover:scale-110 transition">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Função para alternar o menu móvel
+        function toggleMenu() {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const isExpanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+            
+            menuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+            
+            // Alterna o ícone de hamburger
+            const icon = menuButton.querySelector('.fa-bars, .fa-xmark');
+            if (icon) {
+                if (isExpanded) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-xmark');
+                } else {
+                    icon.classList.remove('fa-xmark');
+                    icon.classList.add('fa-bars');
+                }
+            }
+        }
+
+        // Adiciona o listener ao botão de menu
+        document.getElementById('menu-button').addEventListener('click', toggleMenu);
+
+        // Função para scroll suave e fechar o menu mobile após clique
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Se o menu mobile estiver aberto, fecha ele
+                if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                    toggleMenu();
+                }
+                
+                // Habilita o scroll suave
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
