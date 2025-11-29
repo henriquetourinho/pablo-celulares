@@ -19,8 +19,8 @@
                     fontFamily: { sans: ['"Roboto"', 'sans-serif'] },
                     colors: {
                         brand: {
-                            blue: '#00297b', /* Azul Principal */
-                            light: '#15abc4', /* Azul Secundário/Destaque */
+                            blue: '#00297b', /* NOVO AZUL PRINCIPAL */
+                            light: '#15abc4', /* NOVO AZUL SECUNDÁRIO/DESTAQUE */
                             accent: '#25D366', 
                             dark: '#0a0a0a',
                         }
@@ -203,16 +203,19 @@
             <div class="text-center mb-10">
                 <h3 class="text-brand-blue font-bold uppercase text-sm tracking-widest mb-2">Casos de Sucesso</h3>
                 <h2 class="text-3xl font-black text-gray-900">Nossas Soluções Completas</h2>
-                <p class="text-gray-500">Arraste para o lado e confira alguns dos nossos resultados de manutenção pesada.</p>
+                <p class="text-gray-500">Passe o mouse (ou toque) na foto para ver o antes e o depois. Arraste para o lado e confira os outros casos.</p>
             </div>
 
             <div class="flex overflow-x-auto snap-x-mandatory gap-6 pb-8 hide-scrollbar">
                 
                 <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1598327773202-3c9383c4fa11?q=80&w=600" class="w-full h-full object-cover">
-                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
-                        <div class="absolute bottom-4 right-4 bg-brand-accent text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                    <div class="relative h-64 before-after-container">
+                        <img src="/media/depois.webp" class="before-after-image" alt="Reparo finalizado (Depois)">
+                        
+                        <img src="/media/antes.webp" class="before-after-image before-image" alt="Celular quebrado (Antes)">
+
+                        <div class="before-after-label label-before">ANTES</div>
+                        <div class="before-after-label label-after">DEPOIS</div>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Troca de Vidro iPhone 11</h4>
@@ -221,10 +224,13 @@
                 </div>
 
                 <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                    <div class="relative h-64">
-                        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?q=80&w=600" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition"></div>
-                        <span class="absolute bottom-3 left-3 bg-brand-blue text-white text-xs font-bold px-2 py-1 rounded">Baterias e Carga</span>
+                    <div class="relative h-64 before-after-container">
+                        <img src="/media/depois.webp" class="before-after-image" alt="Reparo finalizado (Depois)">
+                        
+                        <img src="/media/antes.webp" class="before-after-image before-image" alt="Celular quebrado (Antes)">
+
+                        <div class="before-after-label label-before">ANTES</div>
+                        <div class="before-after-label label-after">DEPOIS</div>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Reparo Lógico de Placa</h4>
@@ -233,10 +239,13 @@
                 </div>
 
                 <div class="snap-center shrink-0 w-80 md:w-96 bg-gray-50 rounded-xl overflow-hidden shadow-lg border border-gray-100">
-                    <div class="relative h-64">
-                        <img src="https://plus.unsplash.com/premium_photo-1680985551009-05107cd2752c?q=80&w=600" class="w-full h-full object-cover">
-                         <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded">ANTES</div>
-                        <div class="absolute bottom-4 right-4 bg-brand-accent text-white text-xs font-bold px-2 py-1 rounded">DEPOIS</div>
+                    <div class="relative h-64 before-after-container">
+                        <img src="/media/depois.webp" class="before-after-image" alt="Reparo finalizado (Depois)">
+                        
+                        <img src="/media/antes.webp" class="before-after-image before-image" alt="Celular quebrado (Antes)">
+
+                        <div class="before-after-label label-before">ANTES</div>
+                        <div class="before-after-label label-after">DEPOIS</div>
                     </div>
                     <div class="p-4">
                         <h4 class="font-bold text-brand-blue">Conector Tipo C Quebrado</h4>
@@ -273,10 +282,10 @@
                 </a>
             </div>
             <div class="md:w-1/2 grid grid-cols-2 gap-4">
-                <img src="https://m.media-amazon.com/images/I/61+IsC3T+aL._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
-                <img src="https://m.media-amazon.com/images/I/5182+SgJbSL._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
-                <img src="https://m.media-amazon.com/images/I/61N4i611s+L._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
-                <img src="https://m.media-amazon.com/images/I/516+Sg6u+9L._AC_SX679_.jpg" class="rounded-lg shadow-md hover:scale-105 transition">
+                <img src="/media/reparo.webp" class="rounded-lg shadow-md hover:scale-105 transition" alt="Acessório de Smartphone">
+                <img src="/media/reparo.webp" class="rounded-lg shadow-md hover:scale-105 transition" alt="Acessório de Smartphone">
+                <img src="/media/reparo.webp" class="rounded-lg shadow-md hover:scale-105 transition" alt="Acessório de Smartphone">
+                <img src="/media/reparo.webp" class="rounded-lg shadow-md hover:scale-105 transition" alt="Acessório de Smartphone">
             </div>
         </div>
     </section>
