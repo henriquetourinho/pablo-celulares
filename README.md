@@ -109,7 +109,7 @@ Abaixo está a prévia da loading page.
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/henriquetourinho/pablo-celulares/9bd489e9879d79912b0edee815bd74b4b46c9354/media/site.png" width="70%">
+  <img src="https://raw.githubusercontent.com/henriquetourinho/pablo-celulares/refs/heads/main/media/demostracao.gif" width="70%">
 </p>
 
 
